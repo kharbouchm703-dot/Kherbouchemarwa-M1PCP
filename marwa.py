@@ -47,3 +47,7 @@ def categ(gc):
 df["Catégorie_GC"] = df["Pourcentage_GC"].apply(categ)
 print(df)
 
+
+# 6) Ajouter colonne du nombre de 'G'
+df["Nb_G"] = df["Séquence"].apply(lambda seq: seq.count("G"))
+print(df)
