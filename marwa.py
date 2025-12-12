@@ -64,3 +64,9 @@ print("Écart-typeLongueur:",
       ecart_longueur)
 
 
+# 8) Sauvegarder en CSV
+df.to_csv("ADN_final.csv", index=False)
+
+print("\nFichier 'ADN_final.cvs' sauvegardé.")
+print("\nTableau final :")
+print(df)
